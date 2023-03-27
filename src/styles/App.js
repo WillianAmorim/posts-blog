@@ -9,6 +9,7 @@ export const Container = styled.div `
   gap: 50px;
 
   .posts {
+    box-shadow: 5px 10px 5px 10px #d1c5c5;
     border-radius: 15px;
     background-color: #FFFFFF;
     display: flex;
@@ -95,13 +96,11 @@ export const Container = styled.div `
       }
       
     }
-
-    
-
-
   }
 
-
+  @media (max-width: 480px) {
+    background-color: blue;
+  }
 
   
 `
