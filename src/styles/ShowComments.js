@@ -3,9 +3,9 @@ import styled from "styled-components";
 export const Container = styled.div `
   display: flex;
   justify-content: center;
-  gap: 15px;
+  gap: 10px;
   align-items: center;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 
   button {
     font-size: 20px;
