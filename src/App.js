@@ -62,29 +62,30 @@ function App() {
             <p id="p-body">{post.body}</p>
 
             <section className="action-buttons">
-              <button className="button-active-like">
-                <p id="like">Curtir</p>
-                <i id="icon-like" class="bi bi-hand-thumbs-up-fill"></i>
-              </button>
+              <div>
+                <button className="button-active-like">
+                  <i id="icon-like" class="bi bi-hand-thumbs-up-fill"></i>
+                </button>
 
-              <button className="button-active-love">
-                <p id="love">Amei</p>
-                <i id="icon-love" class="bi bi-heart-fill"></i>
-              </button> 
+                <button className="button-active-love">
+                  <i id="icon-love" class="bi bi-heart-fill"></i>
+                </button> 
 
-              <button className="button-active-love">
-                <p id="love">Compartilhar</p>
-                <i class="bi bi-share"></i>
-              </button>          
+                <button className="button-active-love">
+                  <i class="bi bi-share"></i>
+                </button>   
+              </div>    
+              {showComments.includes(post.id) ? (
+                <HideComments hideComments={hideComments} post={post}/>
+              ) : (
+                <ShowComments getCommets={getCommets} post={post}/>
+              )}   
             </section>
+            
           </section>
 
           
-          {showComments.includes(post.id) ? (
-            <HideComments hideComments={hideComments} post={post}/>
-          ) : (
-            <ShowComments getCommets={getCommets} post={post}/>
-          )}
+          
           {post.comments && (
             post.comments.map((coment) => (
               <Comments key={coment.id} coment={coment}/>
