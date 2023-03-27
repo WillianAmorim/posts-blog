@@ -1,9 +1,9 @@
 import React from 'react'
 
-const HideComments = () => {
+const HideComments = ({hideComments, post}) => {
   return (
     <div>
-      <button>
+      <button onClick={() => hideComments(post.id)}>
         Ocultar Comentários
       </button>
     </div>
