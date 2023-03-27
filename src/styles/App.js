@@ -99,6 +99,8 @@ export const Container = styled.div `
   }
 
   @media (max-width: 480px) {
+    padding: 10px;
+
     text-align: center;
     .title-body {
       margin-left: 0px;
