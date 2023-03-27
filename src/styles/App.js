@@ -34,6 +34,7 @@ export const Container = styled.div `
   .title-body {
     margin-left: 50px;
     margin-right: 50px;
+
     #p-title {
       font-size: 20px;
       font-weight: normal;
@@ -48,11 +49,15 @@ export const Container = styled.div `
 
     .action-buttons {
       display: flex;
-      justify-content: space-evenly;
+      justify-content: space-between;
+      gap: 20px;
       text-align: center;
       align-items: center;
-      border-top: 1px solid #D3D3D3;
-      border-bottom: 1px solid #D3D3D3;
+
+      div {
+        display: flex;
+        gap: 20px;
+      }
 
       button {
         width: auto;
@@ -72,20 +77,20 @@ export const Container = styled.div `
         }
       }
 
+      #icon-like {
+        color: #2078f4;
+      }
+
+      #icon-love {
+        color: red;
+      }
+
       .button-active-like:active #like {
         opacity: 0.7;
       }
 
-      .button-active-like:active #icon-like{
-        color: #122782;
-      }
-
       .button-active-love:active #love {
         opacity: 0.7;
-      }
-
-      .button-active-love:active #icon-love{
-        color: red;
       }
       
     }
