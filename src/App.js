@@ -70,6 +70,11 @@ function App() {
               <button className="button-active-love">
                 <p id="love">Amei</p>
                 <i id="icon-love" class="bi bi-heart-fill"></i>
+              </button> 
+
+              <button className="button-active-love">
+                <p id="love">Compartilhar</p>
+                <i class="bi bi-share"></i>
               </button>          
             </section>
           </section>
