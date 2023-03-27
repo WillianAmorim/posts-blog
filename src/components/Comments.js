@@ -8,7 +8,7 @@ const comentários = ({coment}) => {
       <div id='div-comment'>
         <img src={Avatar} alt="" />
         <ul>
-          <li>{coment.email}</li>
+          <li>{coment.email.toLowerCase()}</li>
           <li>{coment.body}</li>
         </ul>
       </div>
