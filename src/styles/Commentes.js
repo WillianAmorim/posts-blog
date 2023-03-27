@@ -46,4 +46,18 @@ export const Container = styled.div`
   #button-like:active, #button-comment:active {
     opacity: 0.7;
   }
+
+  @media (max-width: 480px) {
+    margin-left: 0;
+
+    #div-comment {
+      margin-right: 0;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    img {
+      align-self: center;
+    }
+  }
 `;
