@@ -59,5 +59,9 @@ export const Container = styled.div`
     img {
       align-self: center;
     }
+
+    #div-buttons {
+      align-items: center;
+    }
   }
 `;
