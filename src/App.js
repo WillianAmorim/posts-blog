@@ -55,12 +55,10 @@ function App() {
           ) : (
             <ShowComments getCommets={getCommets} post={post}/>
           )}
-          {post.comments ? (
+          {post.comments && (
             post.comments.map((coment) => (
               <Comments key={coment.id} coment={coment}/>
             ))
-          ) : (
-            ""
           )}
         </div>
       ))}
