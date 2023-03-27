@@ -5,6 +5,10 @@ import HideComments from "./components/HideComments";
 import ShowComments from "./components/ShowComments";
 import Comments from './components/Comments'
 
+import Avatar from './assets/avatar.png'
+
+import { Container } from './styles/App'
+
 function App() {
   const [posts, setPosts] = useState([]);
   const [showComments, setShowComments] = useState([]);
@@ -43,13 +47,25 @@ function App() {
   };
 
   return (
-    <div>
+    <Container>
+      <h1>Blob Posts</h1>
       {posts.map(post => (
-        <div key={post.id}>
-          <h1>Post: {post.id}</h1>
-          <h2>Usuário {post.id}</h2>
-          <h2>{post.title}</h2>
-          <h3>{post.body}</h3>
+        <div className="posts" key={post.id}>
+          
+          <section className="img-user">
+            <img src={Avatar} alt="" />
+            <p id="p-user">Usuário {post.id}</p>
+          </section>
+
+          <section className="title-body">
+            <h3>{post.title}</h3>
+            <p>{post.body}</p>
+          </section>
+
+          <section action-buttons>
+
+          </section>
+          
           {showComments.includes(post.id) ? (
             <HideComments hideComments={hideComments} post={post}/>
           ) : (
@@ -62,7 +78,7 @@ function App() {
           )}
         </div>
       ))}
-    </div>
+    </Container>
   );
 }
 
