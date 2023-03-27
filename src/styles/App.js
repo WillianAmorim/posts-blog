@@ -37,6 +37,7 @@ export const Container = styled.div `
     #p-title {
       font-size: 20px;
       font-weight: normal;
+      margin-bottom: 10px;
     }
 
     #p-body {
@@ -62,16 +63,36 @@ export const Container = styled.div `
         gap: 10px;
         padding-top: 15px;
         padding-bottom: 15px;
+        cursor: pointer;
 
         p {
           font-size: 20px;
           font-weight: 500;
           color: #7d7372;
         }
-
       }
 
+      .button-active-like:active #like {
+        opacity: 0.7;
+      }
+
+      .button-active-like:active #icon-like{
+        color: red;
+      }
+
+      .button-active-love:active #love {
+        opacity: 0.7;
+      }
+
+      .button-active-love:active #icon-love{
+        color: red;
+      }
+      
     }
+
+    
+
+
   }
 
 
