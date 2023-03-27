@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 
 function App() {
   const [posts, setPosts] = useState([]);
+  const [showComments, setshowComments] = useState([]);
 
   //Fazendo uso do useEffect para que a função requisitionGetPosts seja chamada quando a página carregar
   useEffect(() => {
