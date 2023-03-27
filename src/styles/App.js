@@ -45,6 +45,7 @@ export const Container = styled.div `
       font-size: 15px;
       font-weight: normal;
       margin-bottom: 15px;
+      color: #7d7372;
     }
 
     .action-buttons {
