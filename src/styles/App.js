@@ -99,7 +99,11 @@ export const Container = styled.div `
   }
 
   @media (max-width: 480px) {
-    background-color: blue;
+    text-align: center;
+    .title-body {
+      margin-left: 0px;
+      margin-right: 0px;
+    }
   }
 
   
