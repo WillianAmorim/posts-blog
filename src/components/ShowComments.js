@@ -1,9 +1,9 @@
 import React from 'react'
 
-const ShowComments = () => {
+const ShowComments = ({getCommets, post}) => {
   return (
     <div>
-      <button>
+      <button onClick={() => getCommets(post.id)}>
         Mostrar Comentários
       </button>
     </div>
