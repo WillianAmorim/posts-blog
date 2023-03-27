@@ -14,7 +14,7 @@ export const Container = styled.div `
     display: flex;
     flex-direction: column;
     gap: 20px;
-    padding-left: 20px;
+    padding: 40px;
   }
 
   .img-user {
