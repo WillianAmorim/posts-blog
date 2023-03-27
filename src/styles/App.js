@@ -77,7 +77,7 @@ export const Container = styled.div `
       }
 
       .button-active-like:active #icon-like{
-        color: red;
+        color: #122782;
       }
 
       .button-active-love:active #love {
