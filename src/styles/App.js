@@ -26,9 +26,14 @@ export const Container = styled.div `
     }
 
     p {
-      font-family: 'Open Sans', sans-serif;
       font-size: 20px;
       font-weight: bold;
+    }
+  }
+
+  .title-body {
+    h3 {
+
     }
   }
 
