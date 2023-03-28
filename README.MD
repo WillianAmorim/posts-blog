@@ -4,7 +4,7 @@ Este projeto é um blog, onde através de requisições de uma API, conseguimos 
 
 ## Tecnologias Utilizadas
 
-- React
+- React.js
 - Styled Components
 - Media query (Responsividade)
 
